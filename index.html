@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+        <header>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="#nombre">Antonio José | Técnico Informático</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="titulo">
+        <img src="Imagenes/AntonioJose.png" >
+    </section>
+    <script src="script.js"></script>
+    <section id="timeline">
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>2021 - KEYCOES COMUNICACIONES</h2>
+                    <img src="Imagenes/keycoes.png" alt="keycoes">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>2022 - SCI SA</h2>
+                    <img src="Imagenes/sci.png" alt="sci">
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h2>2024 - MEDIAMARKT SATURN</h2>
+                    <img src="Imagenes/MM.png" alt="keycoes">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sobre-mi">
+        <div class="sobre-mi-container">
+            <h2>Sobre Mí</h2>
+            <p>Joven Profesional con experiencia en mantenimiento, reparacion de equipos y atención al cliente en entornos de retail. Habil en gestion de inventarios y distribucion de seguros, con solidos conocimientos informaticos y capacidad de resolución de problemas</p>
+        <a href="Imagenes/CurriculumVitae_AntonioJosé.pdf" download="CurriculumVitae_AntonioJosé">Descargar CV</a>
+        </div>
+    </section>
+                <section class="projects">
+        <h2 id="proyectos" class="titulo-metalico">Mis Proyectos</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="Imagenes/carte.png" alt="Proyecto 1">
+                <div class="project-info">
+                    <h3>WET-SIGN PC</h3>
+                    <p>Un ordenador personalizado sobre un cartel de suelo mojado</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="Imagenes/brazo.png" alt="Proyecto 2">
+                <div class="project-info">
+                    <h3>BRAZO ARDUINO MK2</h3>
+                    <p>Brazo impreso en 3D programado con arduino</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="Imagenes/Tardis.png" alt="Proyecto 3">
+                <div class="project-info">
+                    <h3>PROYECTO TARDIS</h3>
+                    <p>Un ordenador con temática de Doctor Who</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="salestech"></section>
+    <div class="salestech-container">
+        <button onclick="window.location.href='salestech.html'">Descubre SalesTech 📹</button>
+    </div>
+</section>
+
+
+    <div class="container">
+        <h1 id="Gemini">PREGUNTALE LO QUE QUIERAS</h1>
+        <form id="geminiForm">
+            <textarea id="inputText" placeholder="Preguntame lo que quieras..."></textarea>
+        </form>
+        <button type="submit" form="geminiForm">Enviar</button>
+        <div id="responseText" class="response-area"></div>
+    </div>
+    <script src="/gemini-backend/gemini.js"></script>
+
+    
+
+    
+
+    
+    <footer><p>&copy; 2025 Antonio José Rodríguez Cano. Todos los derechos reservados.</p></footer>
+    
+
+</body>
+</html>
